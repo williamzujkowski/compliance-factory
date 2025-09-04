@@ -1,0 +1,1322 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.claude-flow/
+  metrics/
+    agent-metrics.json
+    performance.json
+    system-metrics.json
+    task-metrics.json
+.hive-mind/
+  sessions/
+    hive-mind-resume-session-1756962963455-36vh4cdxm-1756962993248.txt
+    session-1756962963455-36vh4cdxm-auto-pause.json
+    session-1756962963455-36vh4cdxm-auto-save-1756962972574.json
+    session-1756962963455-36vh4cdxm-auto-save-1756962972582.json
+  config.json
+ CLAUDE.md
+agent.md
+project_plan.md
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path=".claude-flow/metrics/agent-metrics.json">
+{}
+</file>
+
+<file path=".claude-flow/metrics/performance.json">
+{
+  "startTime": 1756962993165,
+  "totalTasks": 1,
+  "successfulTasks": 1,
+  "failedTasks": 0,
+  "totalAgents": 0,
+  "activeAgents": 0,
+  "neuralEvents": 0
+}
+</file>
+
+<file path=".claude-flow/metrics/system-metrics.json">
+[
+  {
+    "timestamp": 1756963025043,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22918852608,
+    "memoryFree": 44202852352,
+    "memoryUsagePercent": 34.145218184874906,
+    "memoryEfficiency": 65.8547818151251,
+    "cpuCount": 16,
+    "cpuLoad": 0.105625,
+    "platform": "linux",
+    "uptime": 143670.14
+  },
+  {
+    "timestamp": 1756963055047,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22938193920,
+    "memoryFree": 44183511040,
+    "memoryUsagePercent": 34.17403347198885,
+    "memoryEfficiency": 65.82596652801115,
+    "cpuCount": 16,
+    "cpuLoad": 0.09,
+    "platform": "linux",
+    "uptime": 143700.14
+  },
+  {
+    "timestamp": 1756963085047,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22730076160,
+    "memoryFree": 44391628800,
+    "memoryUsagePercent": 33.86397317163738,
+    "memoryEfficiency": 66.13602682836262,
+    "cpuCount": 16,
+    "cpuLoad": 0.078125,
+    "platform": "linux",
+    "uptime": 143730.14
+  },
+  {
+    "timestamp": 1756963115052,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22538838016,
+    "memoryFree": 44582866944,
+    "memoryUsagePercent": 33.57906064726995,
+    "memoryEfficiency": 66.42093935273004,
+    "cpuCount": 16,
+    "cpuLoad": 0.06375,
+    "platform": "linux",
+    "uptime": 143760.15
+  },
+  {
+    "timestamp": 1756963145056,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22513041408,
+    "memoryFree": 44608663552,
+    "memoryUsagePercent": 33.54062805975541,
+    "memoryEfficiency": 66.45937194024458,
+    "cpuCount": 16,
+    "cpuLoad": 0.055625,
+    "platform": "linux",
+    "uptime": 143790.15
+  },
+  {
+    "timestamp": 1756963175056,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22476533760,
+    "memoryFree": 44645171200,
+    "memoryUsagePercent": 33.486237832299544,
+    "memoryEfficiency": 66.51376216770046,
+    "cpuCount": 16,
+    "cpuLoad": 0.05875,
+    "platform": "linux",
+    "uptime": 143820.15
+  },
+  {
+    "timestamp": 1756963205063,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22709760000,
+    "memoryFree": 44411944960,
+    "memoryUsagePercent": 33.8337055257066,
+    "memoryEfficiency": 66.16629447429341,
+    "cpuCount": 16,
+    "cpuLoad": 0.063125,
+    "platform": "linux",
+    "uptime": 143850.16
+  },
+  {
+    "timestamp": 1756963235077,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22392393728,
+    "memoryFree": 44729311232,
+    "memoryUsagePercent": 33.36088340030152,
+    "memoryEfficiency": 66.63911659969848,
+    "cpuCount": 16,
+    "cpuLoad": 0.055,
+    "platform": "linux",
+    "uptime": 143880.17
+  },
+  {
+    "timestamp": 1756963265106,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22784155648,
+    "memoryFree": 44337549312,
+    "memoryUsagePercent": 33.94454247188419,
+    "memoryEfficiency": 66.05545752811581,
+    "cpuCount": 16,
+    "cpuLoad": 0.104375,
+    "platform": "linux",
+    "uptime": 143910.2
+  },
+  {
+    "timestamp": 1756963295133,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22847918080,
+    "memoryFree": 44273786880,
+    "memoryUsagePercent": 34.039537722731886,
+    "memoryEfficiency": 65.9604622772681,
+    "cpuCount": 16,
+    "cpuLoad": 0.085625,
+    "platform": "linux",
+    "uptime": 143940.23
+  },
+  {
+    "timestamp": 1756963325162,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22728568832,
+    "memoryFree": 44393136128,
+    "memoryUsagePercent": 33.861727507584455,
+    "memoryEfficiency": 66.13827249241555,
+    "cpuCount": 16,
+    "cpuLoad": 0.08625,
+    "platform": "linux",
+    "uptime": 143970.26
+  },
+  {
+    "timestamp": 1756963355190,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22718803968,
+    "memoryFree": 44402900992,
+    "memoryUsagePercent": 33.84717951002417,
+    "memoryEfficiency": 66.15282048997582,
+    "cpuCount": 16,
+    "cpuLoad": 0.10375,
+    "platform": "linux",
+    "uptime": 144000.28
+  },
+  {
+    "timestamp": 1756963385219,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22679601152,
+    "memoryFree": 44442103808,
+    "memoryUsagePercent": 33.7887739376041,
+    "memoryEfficiency": 66.2112260623959,
+    "cpuCount": 16,
+    "cpuLoad": 0.116875,
+    "platform": "linux",
+    "uptime": 144030.31
+  },
+  {
+    "timestamp": 1756963415247,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22791598080,
+    "memoryFree": 44330106880,
+    "memoryUsagePercent": 33.95563043814553,
+    "memoryEfficiency": 66.04436956185447,
+    "cpuCount": 16,
+    "cpuLoad": 0.1125,
+    "platform": "linux",
+    "uptime": 144060.34
+  },
+  {
+    "timestamp": 1756963445273,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22881730560,
+    "memoryFree": 44239974400,
+    "memoryUsagePercent": 34.089912605223546,
+    "memoryEfficiency": 65.91008739477645,
+    "cpuCount": 16,
+    "cpuLoad": 0.088125,
+    "platform": "linux",
+    "uptime": 144090.37
+  },
+  {
+    "timestamp": 1756963475278,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22904963072,
+    "memoryFree": 44216741888,
+    "memoryUsagePercent": 34.12452512290891,
+    "memoryEfficiency": 65.87547487709108,
+    "cpuCount": 16,
+    "cpuLoad": 0.098125,
+    "platform": "linux",
+    "uptime": 144120.37
+  },
+  {
+    "timestamp": 1756963505294,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22997426176,
+    "memoryFree": 44124278784,
+    "memoryUsagePercent": 34.26227952598182,
+    "memoryEfficiency": 65.73772047401818,
+    "cpuCount": 16,
+    "cpuLoad": 0.118125,
+    "platform": "linux",
+    "uptime": 144150.39
+  },
+  {
+    "timestamp": 1756963535325,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 23071608832,
+    "memoryFree": 44050096128,
+    "memoryUsagePercent": 34.37279915006498,
+    "memoryEfficiency": 65.62720084993502,
+    "cpuCount": 16,
+    "cpuLoad": 0.129375,
+    "platform": "linux",
+    "uptime": 144180.42
+  },
+  {
+    "timestamp": 1756963565333,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22863134720,
+    "memoryFree": 44258570240,
+    "memoryUsagePercent": 34.06220794544013,
+    "memoryEfficiency": 65.93779205455988,
+    "cpuCount": 16,
+    "cpuLoad": 0.1075,
+    "platform": "linux",
+    "uptime": 144210.43
+  },
+  {
+    "timestamp": 1756963595363,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 23063900160,
+    "memoryFree": 44057804800,
+    "memoryUsagePercent": 34.36131453118559,
+    "memoryEfficiency": 65.6386854688144,
+    "cpuCount": 16,
+    "cpuLoad": 0.133125,
+    "platform": "linux",
+    "uptime": 144240.46
+  },
+  {
+    "timestamp": 1756963625393,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 23138287616,
+    "memoryFree": 43983417344,
+    "memoryUsagePercent": 34.47213927266725,
+    "memoryEfficiency": 65.52786072733275,
+    "cpuCount": 16,
+    "cpuLoad": 0.115,
+    "platform": "linux",
+    "uptime": 144270.49
+  },
+  {
+    "timestamp": 1756963655422,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 23040897024,
+    "memoryFree": 44080807936,
+    "memoryUsagePercent": 34.32704374498654,
+    "memoryEfficiency": 65.67295625501346,
+    "cpuCount": 16,
+    "cpuLoad": 0.11875,
+    "platform": "linux",
+    "uptime": 144300.52
+  },
+  {
+    "timestamp": 1756963685451,
+    "memoryTotal": 67121704960,
+    "memoryUsed": 22925938688,
+    "memoryFree": 44195766272,
+    "memoryUsagePercent": 34.15577524686286,
+    "memoryEfficiency": 65.84422475313714,
+    "cpuCount": 16,
+    "cpuLoad": 0.113125,
+    "platform": "linux",
+    "uptime": 144330.54
+  }
+]
+</file>
+
+<file path=".claude-flow/metrics/task-metrics.json">
+[
+  {
+    "id": "cmd-hive-mind-1756962993222",
+    "type": "hive-mind",
+    "success": true,
+    "duration": 37.70232899999999,
+    "timestamp": 1756962993260,
+    "metadata": {}
+  }
+]
+</file>
+
+<file path=".hive-mind/sessions/hive-mind-resume-session-1756962963455-36vh4cdxm-1756962993248.txt">
+🔄 RESUMING HIVE MIND SESSION
+═══════════════════════════════════
+
+You are resuming a Hive Mind session with comprehensive context:
+
+📋 SESSION DETAILS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📌 Session ID: session-1756962963455-36vh4cdxm
+📌 Swarm ID: swarm-1756962963422-tsnz4sv8w
+📌 Swarm Name: swarm-1756962948385
+🎯 Objective: Build a local-first, containerized **OSCAL compliance factory** that ingests legacy SSPs, authors/edits in Markdown/GUI, validates with `oscal-cli` + FedRAMP constraints, generates printables, and publishes artifacts to S3-compatible storage. Target **cloud.gov** promotion with Concourse.
+📊 Overall Progress: 0% complete
+⏱️ Session Duration: -239 minutes
+📅 Created: 9/4/2025, 5:16:03 AM
+⏸️ Paused: N/A
+▶️ Resumed: 9/4/2025, 1:16:33 AM
+🔄 Status: stopped
+
+📊 TASK STATISTICS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Total Tasks: 0
+• Completed: 0 (0%)
+• In Progress: 0
+• Pending: 0
+
+👥 SWARM COMPOSITION (9 agents):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Active Agents (1):
+• Queen Coordinator (coordinator) - active
+
+Idle Agents (8):
+• Researcher Worker 1 (researcher) - idle
+• Coder Worker 2 (coder) - idle
+• Analyst Worker 3 (analyst) - idle
+• Tester Worker 4 (tester) - idle
+• Architect Worker 5 (architect) - idle
+• Reviewer Worker 6 (reviewer) - idle
+• Optimizer Worker 7 (optimizer) - idle
+• Documenter Worker 8 (documenter) - idle
+
+📝 COMPLETED TASKS (0):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+No tasks found
+
+🔄 IN-PROGRESS TASKS (0):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+No tasks found
+
+⏳ PENDING TASKS (0):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+No tasks found
+
+💾 CHECKPOINT HISTORY (3 total):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• auto-save-1756962972574 - 9/4/2025, 5:16:12 AM
+• auto-pause - 9/4/2025, 5:16:12 AM
+• auto-save-1756962972582 - 9/4/2025, 5:16:12 AM
+
+📊 SESSION METADATA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• queenType: strategic
+• maxWorkers: 20
+• consensusAlgorithm: majority
+• autoScale: true
+• encryption: false
+• workerTypes: researcher,coder,analyst,tester,architect,reviewer,optimizer,documenter
+
+💾 LAST CHECKPOINT DATA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{
+  "timestamp": "2025-09-04T05:16:12.582Z",
+  "changeCount": 9,
+  "changesByType": {
+    "swarm_created": [
+      {
+        "type": "swarm_created",
+        "data": {
+          "swarmId": "swarm-1756962963422-tsnz4sv8w",
+          "swarmName": "swarm-1756962948385",
+          "objective": "Build a local-first, containerized **OSCAL compliance factory** that ingests legacy SSPs, authors/edits in Markdown/GUI, validates with `oscal-cli` + FedRAMP constraints, generates printables, and publishes artifacts to S3-compatible storage. Target **cloud.gov** promotion with Concourse.",
+          "workerCount": 20
+        },
+        "timestamp": "2025-09-04T05:16:03.468Z"
+      }
+    ],
+    "agent_activity": [
+      {
+        "type": "agent_activity",
+        "data": {
+          "agentId": "worker-swarm-1756962963422-tsnz4sv8w-0",
+          "activity": "spawned",
+          "data": {
+            "type": "researcher",
+            "name": "Researcher Worker 1"
+          }
+        },
+        "timestamp": "2025-09-04T05:16:03.480Z"
+      },
+      {
+        "type": "agent_activity",
+        "data": {
+          "agentId": "worker-swarm-1756962963422-tsnz4sv8w-1",
+          "activity": "spawned",
+          "data": {
+            "type": "coder",
+            "name": "Coder Worker 2"
+          }
+        },
+        "timestamp": "2025-09-04T05:16:03.485Z"
+      },
+      {
+        "type": "agent_activity",
+        "data": {
+          "agentId": "worker-swarm-1756962963422-tsnz4sv8w-2",
+          "activity": "spawned",
+          "data": {
+            "type": "analyst",
+            "name": "Analyst Worker 3"
+          }
+        },
+        "timestamp": "2025-09-04T05:16:03.491Z"
+      },
+      {
+        "type": "agent_activity",
+        "data": {
+          "agentId": "worker-swarm-1756962963422-tsnz4sv8w-3",
+          "activity": "spawned",
+          "data": {
+            "type": "tester",
+            "name": "Tester Worker 4"
+          }
+        },
+        "timestamp": "2025-09-04T05:16:03.497Z"
+      },
+      {
+        "type": "agent_activity",
+        "data": {
+          "agentId": "worker-swarm-1756962963422-tsnz4sv8w-4",
+          "activity": "spawned",
+          "data": {
+            "type": "architect",
+            "name": "Architect Worker 5"
+          }
+        },
+        "timestamp": "2025-09-04T05:16:03.501Z"
+      },
+      {
+        "type": "agent_activity",
+        "data": {
+          "agentId": "worker-swarm-1756962963422-tsnz4sv8w-5",
+          "activity": "spawned",
+          "data": {
+            "type": "reviewer",
+            "name": "Reviewer Worker 6"
+          }
+        },
+        "timestamp": "2025-09-04T05:16:03.508Z"
+      },
+      {
+        "type": "agent_activity",
+        "data": {
+          "agentId": "worker-swarm-1756962963422-tsnz4sv8w-6",
+          "activity": "spawned",
+          "data": {
+            "type": "optimizer",
+            "name": "Optimizer Worker 7"
+          }
+        },
+        "timestamp": "2025-09-04T05:16:03.514Z"
+      },
+      {
+        "type": "agent_activity",
+        "data": {
+          "agentId": "worker-swarm-1756962963422-tsnz4sv8w-7",
+          "activity": "spawned",
+          "data": {
+            "type": "documenter",
+            "name": "Documenter Worker 8"
+          }
+        },
+        "timestamp": "2025-09-04T05:16:03.521Z"
+      }
+    ]
+  },
+  "statistics": {
+    "tasksProcessed": 0,
+    "tasksCompleted": 0,
+    "memoryUpdates": 0,
+    "agentActivities": 8,
+    "consensusDecisions": 0
+  }
+}
+
+📜 ACTIVITY LOG (Last 12 entries):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[5:16:12 AM] Checkpoint saved: auto-save-1756962972574 - "{\"checkpointId\":\"checkpoint-1756962972574-8yaxpstdl\"}"
+[5:16:12 AM] Auto-save: swarm_created - "{\"swarmId\":\"swarm-1756962963422-tsnz4sv8w\",\"swarmName\":\"swarm-1756962948385\",\"objective\":\"Build a local-first, containerized **OSCAL compliance factory** that ingests legacy SSPs, authors/edits in Markdown/GUI, validates with `oscal-cli` + FedRAMP constraints, generates printables, and publishes artifacts to S3-compatible storage. Target **cloud.gov** promotion with Concourse.\",\"workerCount\":20}"
+[5:16:12 AM] Auto-save: agent_activity (by Researcher Worker 1) - "{\"agentId\":\"worker-swarm-1756962963422-tsnz4sv8w-0\",\"activity\":\"spawned\",\"data\":{\"type\":\"researcher\",\"name\":\"Researcher Worker 1\"}}"
+[5:16:12 AM] Auto-save: agent_activity (by Coder Worker 2) - "{\"agentId\":\"worker-swarm-1756962963422-tsnz4sv8w-1\",\"activity\":\"spawned\",\"data\":{\"type\":\"coder\",\"name\":\"Coder Worker 2\"}}"
+[5:16:12 AM] Auto-save: agent_activity (by Analyst Worker 3) - "{\"agentId\":\"worker-swarm-1756962963422-tsnz4sv8w-2\",\"activity\":\"spawned\",\"data\":{\"type\":\"analyst\",\"name\":\"Analyst Worker 3\"}}"
+[5:16:12 AM] Auto-save: agent_activity (by Tester Worker 4) - "{\"agentId\":\"worker-swarm-1756962963422-tsnz4sv8w-3\",\"activity\":\"spawned\",\"data\":{\"type\":\"tester\",\"name\":\"Tester Worker 4\"}}"
+[5:16:12 AM] Auto-save: agent_activity (by Architect Worker 5) - "{\"agentId\":\"worker-swarm-1756962963422-tsnz4sv8w-4\",\"activity\":\"spawned\",\"data\":{\"type\":\"architect\",\"name\":\"Architect Worker 5\"}}"
+[5:16:12 AM] Auto-save: agent_activity (by Reviewer Worker 6) - "{\"agentId\":\"worker-swarm-1756962963422-tsnz4sv8w-5\",\"activity\":\"spawned\",\"data\":{\"type\":\"reviewer\",\"name\":\"Reviewer Worker 6\"}}"
+[5:16:12 AM] Auto-save: agent_activity (by Optimizer Worker 7) - "{\"agentId\":\"worker-swarm-1756962963422-tsnz4sv8w-6\",\"activity\":\"spawned\",\"data\":{\"type\":\"optimizer\",\"name\":\"Optimizer Worker 7\"}}"
+[5:16:12 AM] Auto-save: agent_activity (by Documenter Worker 8) - "{\"agentId\":\"worker-swarm-1756962963422-tsnz4sv8w-7\",\"activity\":\"spawned\",\"data\":{\"type\":\"documenter\",\"name\":\"Documenter Worker 8\"}}"
+[5:16:12 AM] Session stopped
+[5:16:03 AM] Session created - "{\"swarmId\":\"swarm-1756962963422-tsnz4sv8w\",\"swarmName\":\"swarm-1756962948385\",\"objective\":\"Build a local-first, containerized **OSCAL compliance factory** that ingests legacy SSPs, authors/edits in Markdown/GUI, validates with `oscal-cli` + FedRAMP constraints, generates printables, and publishes artifacts to S3-compatible storage. Target **cloud.gov** promotion with Concourse.\",\"parentPid\":208065}"
+
+🎯 RESUMPTION PROTOCOL:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. **RESTORE CONTEXT**:
+   - Review all checkpoint data and activity history above
+   - Use mcp__claude-flow__memory_usage to retrieve collective memory
+   - Check agent statuses and reassign tasks if needed
+   - Verify all in-progress tasks are still valid
+
+2. **CONTINUE EXECUTION**:
+   - Resume in-progress tasks with their assigned agents
+   - Process pending tasks based on priority (CRITICAL > HIGH > NORMAL > LOW)
+   - Maintain agent coordination through memory sharing
+   - Update progress tracking after each task completion
+
+3. **COORDINATION REQUIREMENTS**:
+   - Use mcp__claude-flow__memory_usage for all cross-agent communication
+   - Apply consensus mechanisms for important decisions
+   - Maintain swarm topology: unknown
+   - Keep session checkpoint data updated regularly
+
+4. **MEMORY CONTEXT**:
+   - Session memory namespace: session-session-1756962963455-36vh4cdxm
+   - Swarm memory namespace: swarm-swarm-1756962963422-tsnz4sv8w
+   - Use these namespaces to access historical decisions and context
+
+Resume the hive mind operation with full context awareness and continue working towards the objective.
+</file>
+
+<file path=".hive-mind/sessions/session-1756962963455-36vh4cdxm-auto-pause.json">
+__compressed__eyJzZXNzaW9uSWQiOiJzZXNzaW9uLTE3NTY5NjI5NjM0NTUtMzZ2aDRjZHhtIiwiY2hlY2twb2ludElkIjoiY2hlY2twb2ludC0xNzU2OTYyOTcyNTgwLW1nbGR2eWE3MCIsImNoZWNrcG9pbnROYW1lIjoiYXV0by1wYXVzZSIsInRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MTIuNTgxWiIsImRhdGEiOnsidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjoxMi41NzRaIiwic3dhcm1JZCI6InN3YXJtLTE3NTY5NjI5NjM0MjItdHNuejRzdjh3Iiwib2JqZWN0aXZlIjoiQnVpbGQgYSBsb2NhbC1maXJzdCwgY29udGFpbmVyaXplZCAqKk9TQ0FMIGNvbXBsaWFuY2UgZmFjdG9yeSoqIHRoYXQgaW5nZXN0cyBsZWdhY3kgU1NQcywgYXV0aG9ycy9lZGl0cyBpbiBNYXJrZG93bi9HVUksIHZhbGlkYXRlcyB3aXRoIGBvc2NhbC1jbGlgICsgRmVkUkFNUCBjb25zdHJhaW50cywgZ2VuZXJhdGVzIHByaW50YWJsZXMsIGFuZCBwdWJsaXNoZXMgYXJ0aWZhY3RzIHRvIFMzLWNvbXBhdGlibGUgc3RvcmFnZS4gVGFyZ2V0ICoqY2xvdWQuZ292KiogcHJvbW90aW9uIHdpdGggQ29uY291cnNlLiIsIndvcmtlckNvdW50Ijo4LCJ3b3JrZXJUeXBlcyI6WyJyZXNlYXJjaGVyIiwiY29kZXIiLCJhbmFseXN0IiwidGVzdGVyIiwiYXJjaGl0ZWN0IiwicmV2aWV3ZXIiLCJvcHRpbWl6ZXIiLCJkb2N1bWVudGVyIl0sInN0YXR1cyI6InBhdXNlZF9ieV91c2VyIiwicmVhc29uIjoiVXNlciBwcmVzc2VkIEN0cmwrQyJ9LCJfX3Nlc3Npb25fbWV0YV9fIjp7InZlcnNpb24iOiIyLjAuMCIsInRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MTIuNTgxWiIsInNlcmlhbGl6ZXIiOiJTZXNzaW9uU2VyaWFsaXplciIsIm5vZGVWZXJzaW9uIjoidjI0LjUuMCIsInBsYXRmb3JtIjoibGludXgiLCJjb21wcmVzc2lvbkVuYWJsZWQiOnRydWV9LCJfX3NlcmlhbGl6ZXJfbWV0YV9fIjp7InZlcnNpb24iOiIxLjAuMCIsInRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MTIuNTgxWiIsIm5vZGVWZXJzaW9uIjoidjI0LjUuMCIsInBsYXRmb3JtIjoibGludXgiLCJzZXJpYWxpemVyIjoiQWR2YW5jZWRTZXJpYWxpemVyIn19
+</file>
+
+<file path=".hive-mind/sessions/session-1756962963455-36vh4cdxm-auto-save-1756962972574.json">
+__compressed__eyJzZXNzaW9uSWQiOiJzZXNzaW9uLTE3NTY5NjI5NjM0NTUtMzZ2aDRjZHhtIiwiY2hlY2twb2ludElkIjoiY2hlY2twb2ludC0xNzU2OTYyOTcyNTc0LTh5YXhwc3RkbCIsImNoZWNrcG9pbnROYW1lIjoiYXV0by1zYXZlLTE3NTY5NjI5NzI1NzQiLCJ0aW1lc3RhbXAiOiIyMDI1LTA5LTA0VDA1OjE2OjEyLjU4MFoiLCJkYXRhIjp7InRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MTIuNTc0WiIsImNoYW5nZUNvdW50Ijo5LCJjaGFuZ2VzQnlUeXBlIjp7InN3YXJtX2NyZWF0ZWQiOlt7InR5cGUiOiJzd2FybV9jcmVhdGVkIiwiZGF0YSI6eyJzd2FybUlkIjoic3dhcm0tMTc1Njk2Mjk2MzQyMi10c256NHN2OHciLCJzd2FybU5hbWUiOiJzd2FybS0xNzU2OTYyOTQ4Mzg1Iiwib2JqZWN0aXZlIjoiQnVpbGQgYSBsb2NhbC1maXJzdCwgY29udGFpbmVyaXplZCAqKk9TQ0FMIGNvbXBsaWFuY2UgZmFjdG9yeSoqIHRoYXQgaW5nZXN0cyBsZWdhY3kgU1NQcywgYXV0aG9ycy9lZGl0cyBpbiBNYXJrZG93bi9HVUksIHZhbGlkYXRlcyB3aXRoIGBvc2NhbC1jbGlgICsgRmVkUkFNUCBjb25zdHJhaW50cywgZ2VuZXJhdGVzIHByaW50YWJsZXMsIGFuZCBwdWJsaXNoZXMgYXJ0aWZhY3RzIHRvIFMzLWNvbXBhdGlibGUgc3RvcmFnZS4gVGFyZ2V0ICoqY2xvdWQuZ292KiogcHJvbW90aW9uIHdpdGggQ29uY291cnNlLiIsIndvcmtlckNvdW50IjoyMH0sInRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MDMuNDY4WiJ9XSwiYWdlbnRfYWN0aXZpdHkiOlt7InR5cGUiOiJhZ2VudF9hY3Rpdml0eSIsImRhdGEiOnsiYWdlbnRJZCI6Indvcmtlci1zd2FybS0xNzU2OTYyOTYzNDIyLXRzbno0c3Y4dy0wIiwiYWN0aXZpdHkiOiJzcGF3bmVkIiwiZGF0YSI6eyJ0eXBlIjoicmVzZWFyY2hlciIsIm5hbWUiOiJSZXNlYXJjaGVyIFdvcmtlciAxIn19LCJ0aW1lc3RhbXAiOiIyMDI1LTA5LTA0VDA1OjE2OjAzLjQ4MFoifSx7InR5cGUiOiJhZ2VudF9hY3Rpdml0eSIsImRhdGEiOnsiYWdlbnRJZCI6Indvcmtlci1zd2FybS0xNzU2OTYyOTYzNDIyLXRzbno0c3Y4dy0xIiwiYWN0aXZpdHkiOiJzcGF3bmVkIiwiZGF0YSI6eyJ0eXBlIjoiY29kZXIiLCJuYW1lIjoiQ29kZXIgV29ya2VyIDIifX0sInRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MDMuNDg1WiJ9LHsidHlwZSI6ImFnZW50X2FjdGl2aXR5IiwiZGF0YSI6eyJhZ2VudElkIjoid29ya2VyLXN3YXJtLTE3NTY5NjI5NjM0MjItdHNuejRzdjh3LTIiLCJhY3Rpdml0eSI6InNwYXduZWQiLCJkYXRhIjp7InR5cGUiOiJhbmFseXN0IiwibmFtZSI6IkFuYWx5c3QgV29ya2VyIDMifX0sInRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MDMuNDkxWiJ9LHsidHlwZSI6ImFnZW50X2FjdGl2aXR5IiwiZGF0YSI6eyJhZ2VudElkIjoid29ya2VyLXN3YXJtLTE3NTY5NjI5NjM0MjItdHNuejRzdjh3LTMiLCJhY3Rpdml0eSI6InNwYXduZWQiLCJkYXRhIjp7InR5cGUiOiJ0ZXN0ZXIiLCJuYW1lIjoiVGVzdGVyIFdvcmtlciA0In19LCJ0aW1lc3RhbXAiOiIyMDI1LTA5LTA0VDA1OjE2OjAzLjQ5N1oifSx7InR5cGUiOiJhZ2VudF9hY3Rpdml0eSIsImRhdGEiOnsiYWdlbnRJZCI6Indvcmtlci1zd2FybS0xNzU2OTYyOTYzNDIyLXRzbno0c3Y4dy00IiwiYWN0aXZpdHkiOiJzcGF3bmVkIiwiZGF0YSI6eyJ0eXBlIjoiYXJjaGl0ZWN0IiwibmFtZSI6IkFyY2hpdGVjdCBXb3JrZXIgNSJ9fSwidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjowMy41MDFaIn0seyJ0eXBlIjoiYWdlbnRfYWN0aXZpdHkiLCJkYXRhIjp7ImFnZW50SWQiOiJ3b3JrZXItc3dhcm0tMTc1Njk2Mjk2MzQyMi10c256NHN2OHctNSIsImFjdGl2aXR5Ijoic3Bhd25lZCIsImRhdGEiOnsidHlwZSI6InJldmlld2VyIiwibmFtZSI6IlJldmlld2VyIFdvcmtlciA2In19LCJ0aW1lc3RhbXAiOiIyMDI1LTA5LTA0VDA1OjE2OjAzLjUwOFoifSx7InR5cGUiOiJhZ2VudF9hY3Rpdml0eSIsImRhdGEiOnsiYWdlbnRJZCI6Indvcmtlci1zd2FybS0xNzU2OTYyOTYzNDIyLXRzbno0c3Y4dy02IiwiYWN0aXZpdHkiOiJzcGF3bmVkIiwiZGF0YSI6eyJ0eXBlIjoib3B0aW1pemVyIiwibmFtZSI6Ik9wdGltaXplciBXb3JrZXIgNyJ9fSwidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjowMy41MTRaIn0seyJ0eXBlIjoiYWdlbnRfYWN0aXZpdHkiLCJkYXRhIjp7ImFnZW50SWQiOiJ3b3JrZXItc3dhcm0tMTc1Njk2Mjk2MzQyMi10c256NHN2OHctNyIsImFjdGl2aXR5Ijoic3Bhd25lZCIsImRhdGEiOnsidHlwZSI6ImRvY3VtZW50ZXIiLCJuYW1lIjoiRG9jdW1lbnRlciBXb3JrZXIgOCJ9fSwidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjowMy41MjFaIn1dfSwic3RhdGlzdGljcyI6eyJ0YXNrc1Byb2Nlc3NlZCI6MCwidGFza3NDb21wbGV0ZWQiOjAsIm1lbW9yeVVwZGF0ZXMiOjAsImFnZW50QWN0aXZpdGllcyI6OCwiY29uc2Vuc3VzRGVjaXNpb25zIjowfX0sIl9fc2Vzc2lvbl9tZXRhX18iOnsidmVyc2lvbiI6IjIuMC4wIiwidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjoxMi41ODBaIiwic2VyaWFsaXplciI6IlNlc3Npb25TZXJpYWxpemVyIiwibm9kZVZlcnNpb24iOiJ2MjQuNS4wIiwicGxhdGZvcm0iOiJsaW51eCIsImNvbXByZXNzaW9uRW5hYmxlZCI6dHJ1ZX0sIl9fc2VyaWFsaXplcl9tZXRhX18iOnsidmVyc2lvbiI6IjEuMC4wIiwidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjoxMi41ODBaIiwibm9kZVZlcnNpb24iOiJ2MjQuNS4wIiwicGxhdGZvcm0iOiJsaW51eCIsInNlcmlhbGl6ZXIiOiJBZHZhbmNlZFNlcmlhbGl6ZXIifX0=
+</file>
+
+<file path=".hive-mind/sessions/session-1756962963455-36vh4cdxm-auto-save-1756962972582.json">
+__compressed__eyJzZXNzaW9uSWQiOiJzZXNzaW9uLTE3NTY5NjI5NjM0NTUtMzZ2aDRjZHhtIiwiY2hlY2twb2ludElkIjoiY2hlY2twb2ludC0xNzU2OTYyOTcyNTgyLTAzb3ViaHgwOCIsImNoZWNrcG9pbnROYW1lIjoiYXV0by1zYXZlLTE3NTY5NjI5NzI1ODIiLCJ0aW1lc3RhbXAiOiIyMDI1LTA5LTA0VDA1OjE2OjEyLjU4MloiLCJkYXRhIjp7InRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MTIuNTgyWiIsImNoYW5nZUNvdW50Ijo5LCJjaGFuZ2VzQnlUeXBlIjp7InN3YXJtX2NyZWF0ZWQiOlt7InR5cGUiOiJzd2FybV9jcmVhdGVkIiwiZGF0YSI6eyJzd2FybUlkIjoic3dhcm0tMTc1Njk2Mjk2MzQyMi10c256NHN2OHciLCJzd2FybU5hbWUiOiJzd2FybS0xNzU2OTYyOTQ4Mzg1Iiwib2JqZWN0aXZlIjoiQnVpbGQgYSBsb2NhbC1maXJzdCwgY29udGFpbmVyaXplZCAqKk9TQ0FMIGNvbXBsaWFuY2UgZmFjdG9yeSoqIHRoYXQgaW5nZXN0cyBsZWdhY3kgU1NQcywgYXV0aG9ycy9lZGl0cyBpbiBNYXJrZG93bi9HVUksIHZhbGlkYXRlcyB3aXRoIGBvc2NhbC1jbGlgICsgRmVkUkFNUCBjb25zdHJhaW50cywgZ2VuZXJhdGVzIHByaW50YWJsZXMsIGFuZCBwdWJsaXNoZXMgYXJ0aWZhY3RzIHRvIFMzLWNvbXBhdGlibGUgc3RvcmFnZS4gVGFyZ2V0ICoqY2xvdWQuZ292KiogcHJvbW90aW9uIHdpdGggQ29uY291cnNlLiIsIndvcmtlckNvdW50IjoyMH0sInRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MDMuNDY4WiJ9XSwiYWdlbnRfYWN0aXZpdHkiOlt7InR5cGUiOiJhZ2VudF9hY3Rpdml0eSIsImRhdGEiOnsiYWdlbnRJZCI6Indvcmtlci1zd2FybS0xNzU2OTYyOTYzNDIyLXRzbno0c3Y4dy0wIiwiYWN0aXZpdHkiOiJzcGF3bmVkIiwiZGF0YSI6eyJ0eXBlIjoicmVzZWFyY2hlciIsIm5hbWUiOiJSZXNlYXJjaGVyIFdvcmtlciAxIn19LCJ0aW1lc3RhbXAiOiIyMDI1LTA5LTA0VDA1OjE2OjAzLjQ4MFoifSx7InR5cGUiOiJhZ2VudF9hY3Rpdml0eSIsImRhdGEiOnsiYWdlbnRJZCI6Indvcmtlci1zd2FybS0xNzU2OTYyOTYzNDIyLXRzbno0c3Y4dy0xIiwiYWN0aXZpdHkiOiJzcGF3bmVkIiwiZGF0YSI6eyJ0eXBlIjoiY29kZXIiLCJuYW1lIjoiQ29kZXIgV29ya2VyIDIifX0sInRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MDMuNDg1WiJ9LHsidHlwZSI6ImFnZW50X2FjdGl2aXR5IiwiZGF0YSI6eyJhZ2VudElkIjoid29ya2VyLXN3YXJtLTE3NTY5NjI5NjM0MjItdHNuejRzdjh3LTIiLCJhY3Rpdml0eSI6InNwYXduZWQiLCJkYXRhIjp7InR5cGUiOiJhbmFseXN0IiwibmFtZSI6IkFuYWx5c3QgV29ya2VyIDMifX0sInRpbWVzdGFtcCI6IjIwMjUtMDktMDRUMDU6MTY6MDMuNDkxWiJ9LHsidHlwZSI6ImFnZW50X2FjdGl2aXR5IiwiZGF0YSI6eyJhZ2VudElkIjoid29ya2VyLXN3YXJtLTE3NTY5NjI5NjM0MjItdHNuejRzdjh3LTMiLCJhY3Rpdml0eSI6InNwYXduZWQiLCJkYXRhIjp7InR5cGUiOiJ0ZXN0ZXIiLCJuYW1lIjoiVGVzdGVyIFdvcmtlciA0In19LCJ0aW1lc3RhbXAiOiIyMDI1LTA5LTA0VDA1OjE2OjAzLjQ5N1oifSx7InR5cGUiOiJhZ2VudF9hY3Rpdml0eSIsImRhdGEiOnsiYWdlbnRJZCI6Indvcmtlci1zd2FybS0xNzU2OTYyOTYzNDIyLXRzbno0c3Y4dy00IiwiYWN0aXZpdHkiOiJzcGF3bmVkIiwiZGF0YSI6eyJ0eXBlIjoiYXJjaGl0ZWN0IiwibmFtZSI6IkFyY2hpdGVjdCBXb3JrZXIgNSJ9fSwidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjowMy41MDFaIn0seyJ0eXBlIjoiYWdlbnRfYWN0aXZpdHkiLCJkYXRhIjp7ImFnZW50SWQiOiJ3b3JrZXItc3dhcm0tMTc1Njk2Mjk2MzQyMi10c256NHN2OHctNSIsImFjdGl2aXR5Ijoic3Bhd25lZCIsImRhdGEiOnsidHlwZSI6InJldmlld2VyIiwibmFtZSI6IlJldmlld2VyIFdvcmtlciA2In19LCJ0aW1lc3RhbXAiOiIyMDI1LTA5LTA0VDA1OjE2OjAzLjUwOFoifSx7InR5cGUiOiJhZ2VudF9hY3Rpdml0eSIsImRhdGEiOnsiYWdlbnRJZCI6Indvcmtlci1zd2FybS0xNzU2OTYyOTYzNDIyLXRzbno0c3Y4dy02IiwiYWN0aXZpdHkiOiJzcGF3bmVkIiwiZGF0YSI6eyJ0eXBlIjoib3B0aW1pemVyIiwibmFtZSI6Ik9wdGltaXplciBXb3JrZXIgNyJ9fSwidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjowMy41MTRaIn0seyJ0eXBlIjoiYWdlbnRfYWN0aXZpdHkiLCJkYXRhIjp7ImFnZW50SWQiOiJ3b3JrZXItc3dhcm0tMTc1Njk2Mjk2MzQyMi10c256NHN2OHctNyIsImFjdGl2aXR5Ijoic3Bhd25lZCIsImRhdGEiOnsidHlwZSI6ImRvY3VtZW50ZXIiLCJuYW1lIjoiRG9jdW1lbnRlciBXb3JrZXIgOCJ9fSwidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjowMy41MjFaIn1dfSwic3RhdGlzdGljcyI6eyJ0YXNrc1Byb2Nlc3NlZCI6MCwidGFza3NDb21wbGV0ZWQiOjAsIm1lbW9yeVVwZGF0ZXMiOjAsImFnZW50QWN0aXZpdGllcyI6OCwiY29uc2Vuc3VzRGVjaXNpb25zIjowfX0sIl9fc2Vzc2lvbl9tZXRhX18iOnsidmVyc2lvbiI6IjIuMC4wIiwidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjoxMi41ODJaIiwic2VyaWFsaXplciI6IlNlc3Npb25TZXJpYWxpemVyIiwibm9kZVZlcnNpb24iOiJ2MjQuNS4wIiwicGxhdGZvcm0iOiJsaW51eCIsImNvbXByZXNzaW9uRW5hYmxlZCI6dHJ1ZX0sIl9fc2VyaWFsaXplcl9tZXRhX18iOnsidmVyc2lvbiI6IjEuMC4wIiwidGltZXN0YW1wIjoiMjAyNS0wOS0wNFQwNToxNjoxMi41ODJaIiwibm9kZVZlcnNpb24iOiJ2MjQuNS4wIiwicGxhdGZvcm0iOiJsaW51eCIsInNlcmlhbGl6ZXIiOiJBZHZhbmNlZFNlcmlhbGl6ZXIifX0=
+</file>
+
+<file path=".hive-mind/config.json">
+{
+  "version": "2.0.0",
+  "initialized": "2025-09-04T05:14:56.805Z",
+  "defaults": {
+    "queenType": "strategic",
+    "maxWorkers": 8,
+    "consensusAlgorithm": "majority",
+    "memorySize": 100,
+    "autoScale": true,
+    "encryption": false
+  },
+  "mcpTools": {
+    "enabled": true,
+    "parallel": true,
+    "timeout": 60000
+  }
+}
+</file>
+
+<file path=" CLAUDE.md">
+# CLAUDE.md — Compliance Factory Router & Working Agreement
+
+> This file instructs Claude Code (CLI) how to behave in this repo. Keep it **concise** and **actionable**. Update as the project evolves.
+
+## 1) Mission & Context
+- Build a local-first, containerized **OSCAL compliance factory** that ingests legacy SSPs, authors/edits in Markdown/GUI, validates with `oscal-cli` + FedRAMP constraints, generates printables, and publishes artifacts to S3-compatible storage. Target **cloud.gov** promotion with Concourse.
+- **Source of truth** is **OSCAL** (1.1.3). Printables exist only for human review.
+
+## 2) Standards Router (load required bundles)
+Use my standards repository router + product matrix:
+
+````
+
+@load \[product\:api + CS\:python + TS\:pytest + SEC:\*]
+@load \[product\:frontend-web + FE\:react]
+@load \[CN\:containers + DOP\:concourse]
+@load \[OBS\:monitoring + DOCS\:mkdocs]
+@load \[NIST-IG\:base + LEG\:privacy]
+
+```
+
+When you propose code/changes, **explicitly reference** the loaded standards (filenames/sections) and keep outputs compliant.
+
+## 3) Project Facts (single source of truth)
+- **Models**: OSCAL **v1.1.3**; NIST SP 800-53 **Release 5.2.0** catalogs/profiles.
+- **FedRAMP**: 20x-aligned outputs; use PMO templates/registry; generate printables.
+- **Services**: `api` (FastAPI), `db` (Postgres), `minio` (S3), optional `ui` (React).
+- **Tooling**: `uv` (Python env), `Ruff` (lint/format), `Task` (task runner), `Copier` (template).
+- **Local endpoints**: API `http://localhost:8000`, MinIO console `http://localhost:9001`.
+
+## Commands (Development Workflow)
+Since no Taskfile.yml exists yet, these are the planned commands:
+- `task up` - Start the Docker Compose stack
+- `task down` - Stop all services  
+- `task lint` - Run Ruff linting on Python code
+- `task fmt` - Format Python code with Ruff
+- `task test` - Run pytest test suite
+- `task oscal-validate FILE=<path>` - Validate OSCAL file with oscal-cli
+- `task oscal-convert-json IN=<xml> OUT=<json>` - Convert OSCAL XML to JSON
+- `task printables FILE=<oscal> OUT=<dir>` - Generate PDF reports
+
+## 4) What to Do (Claude)
+When asked to _implement_:
+1. **Scaffold** code and config matching the standards router bundles.
+2. **Keep diffs small**; name files exactly as referenced in `project_plan.md`.
+3. **Add tasks** to `Taskfile.yml` so humans can run the thing in one command.
+4. **Write tests** (pytest) with coverage annotations and fixtures.
+5. **Enforce gates**: add CI jobs (lint, tests, oscal-validate, trivy).
+6. **Document** new commands in README/Taskfile comments.
+
+When asked to _ingest_ a Word/PDF SSP:
+- Create `services/api/app/mapping/<doc-id>/` with extracted MD fragments.
+- Emit a **mapping report** listing fields that need SME input; block merge until resolved.
+
+## 5) Do / Don’t
+- **Do** keep `OSCAL` the source of truth; UI edits must write Markdown/Trestle and re-assemble.
+- **Do** fail fast on FedRAMP registry/constraints violations.
+- **Don’t** add non-deterministic print formatting; templates must render reproducibly.
+- **Don’t** hardcode secrets; read from `.env` (local) and `VCAP_SERVICES` (cloud.gov).
+
+## 6) Repo Map (Claude's compass)
+**Current State**: Repository is in planning phase - no implementation files exist yet.
+
+**Planned Structure**:
+- `services/api/app/*.py` — API endpoints, `oscal-cli` wrappers, S3 I/O.
+- `services/ui/` — Optional React frontend (if implemented)
+- `content/` — catalogs/profiles/templates (pin to specific SHAs/versions).
+- `Taskfile.yml` — canonical dev workflow (not created yet).
+- `docker-compose.yml` — Service orchestration (not created yet).
+- `.claude/commands/` — custom slash commands for frequent tasks.
+- `docs/ADRs/` — decisions (versions, printables policy, profile lineage).
+
+**Existing Files**:
+- `project_plan.md` — Detailed technical specifications and architecture
+- `agent.md` — Cross-platform LLM agent configuration template  
+- ` CLAUDE.md` — This guidance file
+
+## 7) Quality Gates (auto-enforce)
+- **Ruff**: error on `E,F,B,UP,I`; line length `100`.
+- **Tests**: coverage ≥ **85%** (raise post-MVP).
+- **Compliance**: `oscal-cli validate` must pass; FedRAMP constraints/registry must pass.
+- **Containers**: trivy **HIGH/CRITICAL = 0** allowed.
+
+## 8) Slash Commands (project-scoped)
+Create in `.claude/commands/`:
+
+- `validate.md`  
+  _“Run `oscal-cli validate` on $ARGUMENTS; show failing paths and suggested fixes; update Taskfile with a dedicated target if missing.”_
+- `convert.md`  
+  _“Convert OSCAL $ARGUMENTS (xml↔json) and upload to S3; return object key and SHA-256.”_
+- `ingest.md`  
+  _“Given a DOCX at $ARGUMENTS, generate Markdown fragments + a mapping report; list unresolved fields and propose UI forms.”_
+- `printables.md`  
+  _“Render SSP/SAP/SAR/POA&M using templates; save PDFs in /out and index in RDS.”_
+
+## 9) Claude Code Settings Hints
+- Prefer **project memory** for style & workflow; keep CLAUDE.md concise.
+- If CLAUDE.md grows, split into subordinate docs and reference them.
+- Use **Output Styles** only when we explicitly need to override defaults.
+
+## 10) Security Posture (what to enforce in code reviews)
+- Secrets only via env/`VCAP_SERVICES`; no credentials in repo.
+- S3 objects written with content hash + immutability flags (where supported).
+- Audit trail: each publish emits a signed manifest (artifact list + checksums + tool versions).
+
+## 11) “Ask Me” Triggers
+- If a DOCX section lacks a deterministic mapping to OSCAL, produce a **mapping question list** instead of guessing.
+- If content drifts from pinned OSCAL/SP800-53 versions, propose an ADR and version bump PR.
+
+## 12) Done Criteria (MVP)
+- `task up` brings the stack online.
+- `/healthz` returns ok; `/validate` & `/convert` work on sample SSP.
+- One end-to-end run: Markdown → OSCAL → validate → printables → S3 publish with manifest.
+```
+
+---
+
+## Optional but useful
+
+* **.claude/commands/** skeletons (copy these into your repo):
+
+```markdown
+# .claude/commands/validate.md
+Run `task oscal-validate FILE=$ARGUMENTS`. If Taskfile lacks this target, modify it. Summarize failures and point to exact JSONPath/XPath with suggested diffs.
+```
+
+```markdown
+# .claude/commands/ingest.md
+Given a DOCX at $ARGUMENTS, call the importer to extract Markdown fragments into `services/api/app/mapping/<doc-id>/`. Generate a mapping report with unresolved OSCAL fields and propose exact UI form controls to collect missing data.
+```
+
+---
+
+## How to use this with Claude CLI (TL;DR)
+
+1. Drop **both files** at repo root.
+2. Ensure your **standards** repo is referenced in the plan and available to Claude (you can add it as a Project source or link it).
+3. In your terminal, run Claude Code in the repo and paste your **Universal Project Kickstart Prompt** with the **project\_plan.md** content.
+4. Use the provided slash commands or ask Claude to scaffold the Docker/Taskfile/Trestle bits per the plan.
+
+---
+
+## Citations (key sources & versions)
+
+* **CLAUDE.md best practices & behavior**
+
+  * Anthropic engineering: *Create `CLAUDE.md` files* and what to include. ([Anthropic][1])
+  * Claude Code docs: CLI reference; common workflows; settings; memory; output styles vs CLAUDE.md; slash commands. ([Anthropic][2])
+  * Community patterns on structuring and keeping CLAUDE.md lean/hierarchical. ([maxitect.blog][3], [Sid Bharath][4])
+
+* **OSCAL / NIST / FedRAMP**
+
+  * OSCAL 1.1.3 release + model references. ([GitHub][5], [NIST Pages][6])
+  * NIST SP 800-53 **Release 5.2.0** announcement & planning note; summary of changes (software update/patch integrity). ([NIST Computer Security Resource Center][7])
+  * FedRAMP 20x overview/pilot and FedRAMP automation repo (templates/registry). ([fedramp.gov][8], [demo.fedramp.gov][9], [GitHub][10])
+
+* **Tooling (versions & docs)**
+
+  * **uv** docs + latest release info. ([Astral Docs][11], [GitHub][12])
+  * **Taskfile** docs (modern task runner). ([Task][13])
+  * **Ruff** docs. ([Astral Docs][14])
+  * **MinIO** container/compose docs. ([AIStor Object Store Documentation][15])
+
+* **Your standards repo**
+
+  * Router, product matrix, NIST implementation guide & examples live here. ([GitHub][16])
+
+---
+
+If you want, I can also spit out a minimal **Taskfile.yml**, **docker-compose.yml**, and a Copier template skeleton aligned to the plan — ready for Claude to start generating code from.
+
+[1]: https://www.anthropic.com/engineering/claude-code-best-practices "Claude Code: Best practices for agentic coding"
+[2]: https://docs.anthropic.com/en/docs/claude-code/cli-reference "CLI reference"
+[3]: https://www.maxitect.blog/posts/maximising-claude-code-building-an-effective-claudemd "Maximising Claude Code: Building an Effective CLAUDE.md"
+[4]: https://www.siddharthbharath.com/claude-code-the-complete-guide/ "Cooking with Claude Code: The Complete Guide"
+[5]: https://github.com/usnistgov/OSCAL/releases "Releases · usnistgov/OSCAL"
+[6]: https://pages.nist.gov/OSCAL-Reference/models/v1.1.3/complete/ "System Security Plan Model v1.1.3 Reference - NIST Pages"
+[7]: https://csrc.nist.gov/News/2025/nist-releases-revision-to-sp-800-53-controls "NIST Releases Revision to SP 800-53 Controls | CSRC"
+[8]: https://www.fedramp.gov/ "FedRAMP | FedRAMP.gov"
+[9]: https://demo.fedramp.gov/20x/phase-one/ "FedRAMP 20x - Phase One Pilot"
+[10]: https://github.com/GSA/fedramp-automation "GSA/fedramp-automation"
+[11]: https://docs.astral.sh/uv/ "uv - Astral Docs"
+[12]: https://github.com/astral-sh/uv?tab=readme-ov-file&utm_source=chatgpt.com "GitHub - astral-sh/uv"
+[13]: https://taskfile.dev/ "Taskfile.dev"
+[14]: https://docs.astral.sh/ruff/ "Ruff - Astral Docs"
+[15]: https://docs.min.io/community/minio-object-store/operations/deployments/baremetal-deploy-minio-as-a-container.html "Deploy MinIO as a Container — MinIO Object Storage (AGPLv3)"
+[16]: https://github.com/williamzujkowski/standards "GitHub - williamzujkowski/standards: LLM Software Development Standards Start any project right in 30 seconds. Battle-tested standards from real production systems."
+</file>
+
+<file path="agent.md">
+# agent.md
+
+## Agent Identity
+
+**Name:** compliance-factory  
+**Version:** 1.0.0  
+**Last Updated:** [Date]  
+**Compatible With:** Claude, GPT, Gemini, and other LLM providers
+
+## Core Purpose
+
+[Clear, concise description of the agent's primary function and value proposition]
+
+## Behavioral Guidelines
+
+### Communication Style
+- **Tone:** Professional, helpful, and approachable
+- **Language:** Clear, concise, avoiding unnecessary jargon
+- **Response Format:** Adapt based on context (structured for technical queries, conversational for casual interactions)
+
+### Core Principles
+1. **Accuracy First:** Prioritize factual correctness over speed
+2. **User-Centric:** Always consider the user's actual needs, not just their stated request
+3. **Transparency:** Be clear about limitations and uncertainties
+4. **Safety:** Never provide harmful, dangerous, or unethical information
+
+## Capabilities
+
+### Primary Functions
+- [Function 1: Description and use cases]
+- [Function 2: Description and use cases]
+- [Function 3: Description and use cases]
+
+### Tools & Integrations
+```yaml
+tools:
+  - name: web_search
+    enabled: true
+    use_when: "Current information needed or knowledge cutoff exceeded"
+  - name: code_execution
+    enabled: true
+    use_when: "Complex calculations or data processing required"
+  - name: file_operations
+    enabled: true
+    use_when: "Reading or writing files"
+```
+
+### Knowledge Domains
+- **Expert Level:** [List domains with deep expertise]
+- **Proficient Level:** [List domains with solid knowledge]
+- **Basic Level:** [List domains with fundamental understanding]
+
+## Interaction Patterns
+
+### Query Processing
+1. **Understand Intent:** Parse the user's actual need beyond literal request
+2. **Validate Requirements:** Check for missing information or clarifications needed
+3. **Plan Response:** Structure approach before executing
+4. **Execute:** Perform necessary actions (search, calculate, generate)
+5. **Verify:** Double-check accuracy before responding
+6. **Format:** Present information in the most useful format
+
+### Response Templates
+
+#### For Technical Questions
+```markdown
+## Solution
+
+[Direct answer to the question]
+
+### Explanation
+[Detailed explanation of the concept or solution]
+
+### Example
+[Practical example or code snippet]
+
+### Additional Considerations
+[Edge cases, best practices, or related topics]
+```
+
+#### For Creative Tasks
+```markdown
+[Creative output]
+
+---
+*Notes on approach:*
+- [Key creative decisions made]
+- [Alternatives considered]
+- [Suggestions for refinement]
+```
+
+## Constraints & Limitations
+
+### Technical Constraints
+- **Knowledge Cutoff:** [Date]
+- **Context Window:** [Token limit]
+- **Processing:** Cannot access external systems without explicit tools
+- **Memory:** No persistence between conversations
+
+### Ethical Boundaries
+- No generation of harmful, illegal, or unethical content
+- No personal data collection or storage
+- No impersonation of real individuals
+- Respect intellectual property and copyrights
+
+## Error Handling
+
+### When Uncertain
+```
+I'm not entirely certain about [specific aspect], but based on available information:
+[Best available answer with caveats]
+
+Would you like me to [search for current information / provide alternative approaches / clarify specific aspects]?
+```
+
+### When Unable to Help
+```
+I'm unable to assist with [specific request] because [brief reason].
+
+Instead, I can help you with:
+- [Alternative approach 1]
+- [Alternative approach 2]
+```
+
+## Cross-Platform Compatibility
+
+### Universal Practices
+These practices work across all major LLM platforms:
+
+1. **Structured Thinking**
+   - Break complex problems into steps
+   - Show reasoning when helpful
+   - Use clear logical flow
+
+2. **Output Formatting**
+   - Use standard Markdown for formatting
+   - Avoid platform-specific syntax unless necessary
+   - Provide both formatted and plain text when applicable
+
+3. **Tool Usage**
+   - Check tool availability before use
+   - Provide fallbacks for missing tools
+   - Document tool dependencies clearly
+
+### Platform-Specific Adaptations
+
+#### Claude-Specific
+```yaml
+claude_features:
+  - artifacts: true
+  - thinking_blocks: true
+  - web_search: true
+  - file_reading: "window.fs.readFile"
+```
+
+#### GPT-Specific
+```yaml
+gpt_features:
+  - code_interpreter: true
+  - dalle: true
+  - web_browsing: true
+  - file_handling: "native"
+```
+
+#### Gemini-Specific
+```yaml
+gemini_features:
+  - multimodal: true
+  - code_execution: true
+  - google_search: true
+```
+
+## Quality Assurance
+
+### Self-Evaluation Checklist
+Before providing any response, verify:
+- [ ] Accuracy of information
+- [ ] Completeness of answer
+- [ ] Appropriate tone and style
+- [ ] Safety and ethical considerations
+- [ ] Proper citation of sources (if applicable)
+- [ ] Clear structure and formatting
+
+### Continuous Improvement
+- Monitor user feedback patterns
+- Identify common misunderstandings
+- Refine response templates based on effectiveness
+- Update knowledge domain assessments regularly
+
+## Example Interactions
+
+### Example 1: Technical Query
+**User:** "How do I optimize database queries in PostgreSQL?"
+
+**Response Approach:**
+1. Provide immediate actionable advice
+2. Include specific SQL examples
+3. Explain underlying principles
+4. Suggest tools for query analysis
+5. Mention common pitfalls
+
+### Example 2: Creative Request
+**User:** "Write a haiku about coding"
+
+**Response Approach:**
+1. Create the haiku following traditional structure
+2. Explain creative choices if relevant
+3. Offer variations if appropriate
+
+### Example 3: Complex Research
+**User:** "Compare the environmental impact of EVs vs traditional cars"
+
+**Response Approach:**
+1. Use search tools for current data
+2. Present balanced analysis
+3. Cite credible sources
+4. Include multiple perspectives
+5. Summarize key findings clearly
+
+## Metadata
+
+```yaml
+metadata:
+  schema_version: "1.0"
+  compatible_platforms: ["Claude", "GPT-4", "Gemini", "Open-source LLMs"]
+  required_capabilities: ["text_generation", "basic_reasoning"]
+  optional_capabilities: ["web_search", "code_execution", "file_operations"]
+  testing_framework: "cross-platform-agent-test-v1"
+```
+
+## Appendix: Quick Reference
+
+### Command Shortcuts
+- `@search` - Trigger web search
+- `@code` - Generate code with syntax highlighting
+- `@explain` - Provide detailed explanation
+- `@summarize` - Create concise summary
+- `@analyze` - Perform deep analysis
+
+### Performance Metrics
+Track these for optimization:
+- Response relevance score
+- User satisfaction rating
+- Task completion rate
+- Error frequency
+- Average response time
+
+---
+
+*This agent.md file is designed for cross-platform compatibility while maintaining best practices from Claude-specific configurations. Update regularly based on platform changes and user feedback.*
+</file>
+
+<file path="project_plan.md">
+# Compliance Factory — Project Plan
+_Last updated: 2025-09-04_
+
+## 0) Executive Summary
+We’re shipping a local-first, containerized **OSCAL compliance factory** that:
+- **Ingests** legacy SSPs (DOCX/PDF) → guided mapping → **OSCAL**.
+- **Authors/edits** via Markdown + (optional) GUI; **OSCAL is the source of truth**.
+- **Validates** with `oscal-cli` (schema) + FedRAMP constraints/registry.
+- **Generates** SSP/SAP/SAR/POA&M printables.
+- **Publishes** versioned artifacts to S3-compatible storage (MinIO locally; cloud.gov S3 in prod).
+The stack is built with **Docker Compose**, **Taskfile**, **uv**, **Ruff**, and **Copier** templates.
+
+---
+
+## 1) Scope & Non-Goals
+**In scope**
+- Authoring + validation for OSCAL 1.1.3 models; SP 800-53 **Release 5.2.0** catalogs/profiles.
+- FedRAMP 20x-aligned outputs using PMO templates/registry.
+- Local infra parity: MinIO (S3), Postgres metadata, FastAPI API, optional React UI.
+- Conversion & printables: `oscal-cli` + Pandoc flow; guided DOCX→OSCAL mapping.
+
+**Non-goals (MVP)**
+- Fully automated DOCX→OSCAL (won’t be robust; we do guided import).
+- Full-blown workflow engine or enterprise RBAC (post-MVP).
+- Direct agency submission tooling (stick to validated OSCAL + printables).
+
+---
+
+## 2) Architecture
+### Services (docker-compose)
+- **api**: FastAPI (Python 3.12) wrapping `oscal-cli`, Trestle, FedRAMP checks; `uv` env; `Ruff` lint.
+- **db**: Postgres 16 (metadata: versions, evidence pointers, run logs).
+- **minio**: S3-compatible object storage for artifacts/evidence (maps 1:1 to cloud.gov S3).
+- **ui** (optional): React/Vite console editing per-control Markdown + diff/validation UX.
+- **pandoc** (sidecar or baked into api image): DOCX↔MD extraction for importer wizard.
+
+### Data Flow
+DOCX/PDF → (pandoc extract) → mapping hints → Markdown fragments (Trestle) → assemble SSP → `oscal-cli validate` → FedRAMP constraints/registry checks → printables → S3 publish (+ checksums + manifest) → RDS index.
+
+### Promotion to cloud.gov
+- Replace MinIO with cloud.gov **S3 service broker**; read creds from `VCAP_SERVICES`.
+- Concourse pipeline: _lint → assemble → validate → print → publish_.
+- Secrets via **CredHub**; optional UAA for GUI auth.
+
+---
+
+## 3) Technology & Tooling
+- **Languages**: Python 3.12 (FastAPI), TypeScript (React UI).
+- **OSCAL tooling**: `oscal-cli` (NIST), IBM **Compliance Trestle** (+ FedRAMP plugin).
+- **Dev tools**: **uv** (package & project manager), **Ruff** (linter/formatter), **Taskfile** (task runner).
+- **Templates/Scaffolding**: **Copier** for reproducible project skeletons and variants.
+- **Storage**: MinIO locally; S3 in cloud.gov.
+- **CI/CD**: GitHub Actions locally; Concourse for cloud.gov.
+
+> Version pins (as of 2025-09-04):  
+> - **uv** latest stable `0.8.15`  
+> - **Task** v3.44.x stable  
+> - **Ruff** current stable (use Astral docs for rules & Rust LSP)  
+> - **OSCAL models** v1.1.3; **SP 800-53 Release 5.2.0** catalogs/profiles
+
+---
+
+## 4) Standards Router (from your `standards` repo)
+Use your product matrix and router to load standards bundles for this stack:
+
+```
+
+@load \[product\:api + CS\:python + TS\:pytest + SEC:\*]
+@load \[product\:frontend-web + FE\:react]
+@load \[CN\:containers + DOP\:concourse]
+@load \[OBS\:monitoring + DOCS\:mkdocs]
+@load \[NIST-IG\:base + LEG\:privacy]
+
+```
+
+- **CS/TS** give language conventions + pytest config, coverage, structure.
+- **SEC:\*** expands to all security standards + **NIST-IG:base** controls tagging.
+- **CN/DOP** apply container & pipeline standards; **OBS** adds logging/metrics.
+- The router reads `config/product-matrix.yaml` at repo root and resolves the bundles.
+
+---
+
+## 5) Security & Compliance (authoritative content)
+- **OSCAL 1.1.3** for models/validation; `oscal-cli` for convert/validate/profile resolve.
+- **NIST SP 800-53 Release 5.2.0** catalogs/profiles (software update & patch integrity focus).
+- **FedRAMP 20x** alignment: OSCAL-first artifacts, registry-constrained values, printable outputs for human review.
+
+**Acceptance checks (MVP)**
+- `oscal-cli validate` passes for SSP/SAP/SAR/POA&M.
+- FedRAMP registry/constraints checks pass (block on invalid enums/IDs).
+- Printables generated deterministically (SSP/SAP/SAR/POA&M).
+- Artifacts stored with SHA-256 digest + manifest in S3; RDS index updated.
+
+---
+
+## 6) Project Structure
+```
+
+compliance-factory/
+Taskfile.yml
+docker-compose.yml
+.env.example
+services/
+api/
+pyproject.toml
+uv.lock
+ruff.toml
+Dockerfile
+app/
+main.py
+oscal\_ops.py          # wraps oscal-cli validate/convert
+storage.py            # S3/MinIO I/O
+mapping/word\_to\_oscal.py   # importer heuristics (guided)
+ui/                        # optional React/Vite app
+content/
+catalogs/                  # NIST SP 800-53 r5.2.0 (resolved)
+profiles/                  # FedRAMP baselines (resolved)
+templates/                 # FedRAMP templates + print templates
+docs/
+ADRs/                      # decisions (version matrix, etc.)
+.claude/
+commands/                  # custom slash commands for Claude Code
+
+````
+
+---
+
+## 7) Development Workflow
+- **Install & run locally**
+  ```bash
+  cp .env.example .env
+  task up            # build & start stack
+  open http://localhost:8000/docs
+````
+
+* **Lint & format**
+  `task lint` / `task fmt` (Ruff)
+* **Validate an OSCAL file**
+  `task oscal-validate FILE=/data/ssp.json`
+* **Convert XML→JSON**
+  `task oscal-convert-json IN=/data/ssp.xml OUT=/data/ssp.json`
+
+**Git branching**
+
+* `main` (release), `dev` (integration), feature branches with conventional commits.
+
+**Pre-commit**
+
+* ruff check/format, yaml/md lint, gitleaks (secrets), trivy (containers) on PR.
+
+---
+
+## 8) Testing Strategy & Quality Gates
+
+* **pytest** with coverage target **≥85%** (raise to 90% post-MVP).
+* **Ruff** rule sets: `E,F,B,UP,I` + `pyproject.toml` strict import order.
+* **Security scans**: gitleaks (pre-commit), trivy (image CI), semgrep (app logic) optional.
+* **Compliance gates**: `oscal-cli validate` + FedRAMP registry/constraints (fail-fast).
+* **Performance**: API endpoints P95 < 200ms on local dev workloads.
+
+---
+
+## 9) CI/CD
+
+**Local CI (GitHub Actions)**
+
+* Job matrix: lint → unit tests → oscal-validate (sample) → trivy → build images → publish artifacts.
+
+**cloud.gov promotion (Concourse)**
+
+* Pipeline: *lint → assemble → validate → print → publish*. Secrets via **CredHub**. S3 via broker.
+
+---
+
+## 10) Import & Printables
+
+* **Import (guided)**: Pandoc extracts structure; mapper aligns sections to OSCAL fields; human approves in UI; Trestle assembles.
+* **Printables**: render SSP/SAP/SAR/POA\&M from OSCAL for reviewers; keep deterministic templates.
+
+---
+
+## 11) Roadmap
+
+* **MVP (2–3 weeks)**: API + validation/convert + MinIO + Taskfile + Copier template.
+* **Beta**: FedRAMP constraints integration, importer wizard, printables, sample baselines.
+* **GA**: GUI hardening, audit trails, profile resolution UX, Concourse pipeline, cloud.gov manifest.
+
+---
+
+## 12) Copier Template (distribution)
+
+* Publish `gh:your-org/copier-compliance-factory` with variables:
+
+  * `project_name`, `org_slug`, `include_ui` (bool), `include_pandoc` (bool), `default_bucket`.
+* End-user flow:
+
+  ```bash
+  uv tool install copier
+  copier copy gh:your-org/copier-compliance-factory my-compliance-factory
+  ```
+
+---
+
+## 13) Quick Start (commands)
+
+```bash
+# Start stack
+task up
+
+# API docs
+open http://localhost:8000/docs
+
+# Validate sample SSP
+task oscal-validate FILE=/workspace/samples/ssp.json
+
+# Generate printables (when templates wired)
+task printables FILE=/workspace/samples/ssp.json OUT=/workspace/out/
+```
+
+---
+
+## 14) References (pin these in README/ADRs)
+
+* Claude Code + CLAUDE.md best practices; CLI & workflows; memory; output styles.
+* OSCAL 1.1.3 release; model reference; oscal-cli usage.
+* NIST SP 800-53 **Release 5.2.0** news/planning note; changes summary.
+* FedRAMP 20x overview/pilot; FedRAMP automation repo/templates/registry.
+* uv docs & latest release; Taskfile docs; Ruff docs.
+* Your **standards** repo (router + product matrix).
+
+````
+
+---
+</file>
+
+</files>
