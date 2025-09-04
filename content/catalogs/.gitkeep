@@ -1,0 +1,2 @@
+# This file ensures the catalogs directory is tracked by git
+# OSCAL catalogs will be downloaded here during setup

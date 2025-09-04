@@ -1,0 +1,261 @@
+version: '3'
+
+vars:
+  PYTHON_VERSION: "3.12"
+  UV_VERSION: "0.8.15"
+  RUFF_LINE_LENGTH: "100"
+
+env:
+  PYTHONPATH: "./services/api"
+
+tasks:
+  # Development lifecycle
+  up:
+    desc: Start the Docker Compose stack
+    cmd: docker compose up -d
+    deps: [setup-env]
+
+  up-ui:
+    desc: Start stack with UI service
+    cmd: docker compose --profile with-ui up -d
+    deps: [setup-env]
+
+  up-full:
+    desc: Start stack with all optional services
+    cmd: docker compose --profile with-ui --profile with-pandoc up -d
+    deps: [setup-env]
+
+  down:
+    desc: Stop all services
+    cmd: docker compose down
+
+  restart:
+    desc: Restart all services
+    cmds:
+      - task: down
+      - task: up
+
+  logs:
+    desc: View logs for all services
+    cmd: docker compose logs -f
+
+  logs-api:
+    desc: View API service logs
+    cmd: docker compose logs -f api
+
+  # Environment setup
+  setup-env:
+    desc: Copy .env.example to .env if it doesn't exist
+    cmd: |
+      if [ ! -f .env ]; then
+        cp .env.example .env
+        echo "Created .env from .env.example - please review and update"
+      fi
+    status:
+      - test -f .env
+
+  install:
+    desc: Install Python dependencies using uv
+    dir: services/api
+    cmd: uv sync
+    sources:
+      - pyproject.toml
+      - uv.lock
+    generates:
+      - .venv/
+
+  install-dev:
+    desc: Install with dev dependencies
+    dir: services/api
+    cmd: uv sync --dev
+
+  # Code quality
+  lint:
+    desc: Run Ruff linting on Python code
+    dir: services/api
+    cmd: uv run ruff check .
+
+  lint-fix:
+    desc: Run Ruff linting with auto-fix
+    dir: services/api
+    cmd: uv run ruff check --fix .
+
+  fmt:
+    desc: Format Python code with Ruff
+    dir: services/api
+    cmd: uv run ruff format .
+
+  typecheck:
+    desc: Run mypy type checking
+    dir: services/api
+    cmd: uv run mypy app/
+
+  # Testing
+  test:
+    desc: Run pytest test suite
+    dir: services/api
+    cmd: uv run pytest
+    deps: [install-dev]
+
+  test-cov:
+    desc: Run tests with coverage report
+    dir: services/api
+    cmd: uv run pytest --cov=app --cov-report=html --cov-report=term
+
+  test-watch:
+    desc: Run tests in watch mode
+    dir: services/api
+    cmd: uv run pytest-watch
+
+  # OSCAL operations
+  oscal-validate:
+    desc: "Validate OSCAL file with oscal-cli (usage: task oscal-validate FILE=path/to/file.json)"
+    cmd: |
+      if [ -z "{{.FILE}}" ]; then
+        echo "Usage: task oscal-validate FILE=path/to/file.json"
+        exit 1
+      fi
+      docker compose exec api oscal-cli validate "{{.FILE}}"
+    requires:
+      vars: [FILE]
+
+  oscal-convert-json:
+    desc: "Convert OSCAL XML to JSON (usage: task oscal-convert-json IN=file.xml OUT=file.json)"
+    cmd: |
+      if [ -z "{{.IN}}" ] || [ -z "{{.OUT}}" ]; then
+        echo "Usage: task oscal-convert-json IN=file.xml OUT=file.json"
+        exit 1
+      fi
+      docker compose exec api oscal-cli convert --to=json "{{.IN}}" "{{.OUT}}"
+    requires:
+      vars: [IN, OUT]
+
+  oscal-convert-xml:
+    desc: "Convert OSCAL JSON to XML (usage: task oscal-convert-xml IN=file.json OUT=file.xml)"
+    cmd: |
+      if [ -z "{{.IN}}" ] || [ -z "{{.OUT}}" ]; then
+        echo "Usage: task oscal-convert-xml IN=file.json OUT=file.xml"
+        exit 1
+      fi
+      docker compose exec api oscal-cli convert --to=xml "{{.IN}}" "{{.OUT}}"
+    requires:
+      vars: [IN, OUT]
+
+  # Document processing
+  printables:
+    desc: "Generate PDF reports (usage: task printables FILE=ssp.json OUT=output/dir/)"
+    cmd: |
+      if [ -z "{{.FILE}}" ] || [ -z "{{.OUT}}" ]; then
+        echo "Usage: task printables FILE=ssp.json OUT=output/dir/"
+        exit 1
+      fi
+      docker compose exec api python -m app.printables "{{.FILE}}" "{{.OUT}}"
+    requires:
+      vars: [FILE, OUT]
+
+  ingest-docx:
+    desc: "Import DOCX SSP (usage: task ingest-docx FILE=ssp.docx ID=doc-001)"
+    cmd: |
+      if [ -z "{{.FILE}}" ] || [ -z "{{.ID}}" ]; then
+        echo "Usage: task ingest-docx FILE=ssp.docx ID=doc-001"
+        exit 1
+      fi
+      docker compose exec api python -m app.mapping.word_to_oscal "{{.FILE}}" "{{.ID}}"
+    requires:
+      vars: [FILE, ID]
+
+  # Database operations
+  db-migrate:
+    desc: Run database migrations
+    cmd: docker compose exec api alembic upgrade head
+
+  db-reset:
+    desc: Reset database (WARNING: destroys all data)
+    cmd: |
+      docker compose down db
+      docker volume rm compliance-factory_postgres-data
+      docker compose up -d db
+      sleep 5
+      task db-migrate
+    prompt: This will destroy all database data. Continue?
+
+  # MinIO operations
+  minio-setup:
+    desc: Setup MinIO bucket and policies
+    cmd: docker compose exec api python -c "from app.storage import setup_minio; setup_minio()"
+
+  # Monitoring and health
+  health:
+    desc: Check health of all services
+    cmds:
+      - echo "API Health:"
+      - curl -f http://localhost:8000/healthz || echo "API unhealthy"
+      - echo "Database Health:"
+      - docker compose exec db pg_isready -U postgres -d compliance_factory || echo "DB unhealthy"
+      - echo "MinIO Health:"
+      - curl -f http://localhost:9000/minio/health/live || echo "MinIO unhealthy"
+
+  # Development shortcuts
+  dev:
+    desc: Start development environment with hot reload
+    cmds:
+      - task: up
+      - echo "API docs: http://localhost:8000/docs"
+      - echo "MinIO console: http://localhost:9001"
+      - echo "Database: localhost:5432"
+
+  clean:
+    desc: Clean up containers, volumes, and cache
+    cmds:
+      - docker compose down -v
+      - docker system prune -f
+      - docker volume prune -f
+
+  # Build operations
+  build:
+    desc: Build all Docker images
+    cmd: docker compose build
+
+  build-api:
+    desc: Build only API image
+    cmd: docker compose build api
+
+  # Security scanning
+  security-scan:
+    desc: Run security scans on containers
+    cmds:
+      - echo "Running trivy security scan..."
+      - docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy image compliance-factory-api:latest
+      - echo "Running gitleaks for secrets..."
+      - docker run --rm -v $(pwd):/src zricethezav/gitleaks:latest detect --source /src --verbose
+
+  # Documentation
+  docs-serve:
+    desc: Serve documentation locally
+    cmd: |
+      if [ -d docs ]; then
+        docker run --rm -p 8080:8080 -v $(pwd)/docs:/docs squidfunk/mkdocs-material
+      else
+        echo "No docs directory found"
+      fi
+
+  # Quick commands for common workflows
+  quick-start:
+    desc: Quick start for new developers
+    cmds:
+      - task: setup-env
+      - task: install-dev
+      - task: build
+      - task: up
+      - task: minio-setup
+      - echo "✅ Environment ready!"
+      - echo "🌐 API: http://localhost:8000/docs"
+      - echo "🗄️ MinIO: http://localhost:9001 (admin/password123)"
+
+  validate-setup:
+    desc: Validate the development setup
+    cmds:
+      - task: lint
+      - task: test
+      - task: health
+      - echo "✅ Setup validation complete!"

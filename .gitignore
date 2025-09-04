@@ -1,0 +1,144 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# uv
+.uv/
+uv.lock
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Jupyter
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# React/Vite build
+dist/
+build/
+.parcel-cache
+
+# Docker
+.dockerignore
+*.dockerfile
+.docker/
+
+# Databases
+*.db
+*.sqlite3
+*.db-wal
+*.db-shm
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Security
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+.secrets/
+
+# Cloud.gov specific
+.cf/
+manifest-*.yml
+vars-*.yml
+
+# OSCAL working files (keep source, ignore generated)
+*.resolved.json
+*.resolved.xml
+/workspace/
+/out/
+
+# MinIO/S3 local data
+data/
+minio-data/
+
+# Hive Mind / Swarm state (optional - comment out if you want to track)
+.hive-mind/
+.swarm/
+.claude-flow/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# IDE files
+*.swp
+*.swo
+*~
+
+# Local configuration overrides
+.env.local
+.env.*.local
+config.local.yml
+
+# Pandoc temporary
+.pandoc-tmp/
