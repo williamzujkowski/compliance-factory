@@ -59,21 +59,37 @@ When asked to _ingest_ a Word/PDF SSP:
 - **Don’t** hardcode secrets; read from `.env` (local) and `VCAP_SERVICES` (cloud.gov).
 
 ## 6) Repo Map (Claude's compass)
-**Current State**: Repository is in planning phase - no implementation files exist yet.
+**Current State**: Fully implemented OSCAL Compliance Factory with comprehensive API, services, and testing framework.
 
-**Planned Structure**:
-- `services/api/app/*.py` — API endpoints, `oscal-cli` wrappers, S3 I/O.
-- `services/ui/` — Optional React frontend (if implemented)
-- `content/` — catalogs/profiles/templates (pin to specific SHAs/versions).
-- `Taskfile.yml` — canonical dev workflow (not created yet).
-- `docker-compose.yml` — Service orchestration (not created yet).
-- `.claude/commands/` — custom slash commands for frequent tasks.
-- `docs/ADRs/` — decisions (versions, printables policy, profile lineage).
+**Implementation Structure**:
+- `services/api/app/` — Complete FastAPI application with 25+ endpoints across 6 categories
+  - `api/endpoints/` — REST API endpoints (validation, conversion, storage, operations, fedramp, ingestion, printables)
+  - `services/` — Business logic services (OSCAL, storage, FedRAMP, ingestion, printables)
+  - `models/` — SQLAlchemy database models (base, operation, artifact, validation)
+  - `core/` — Application configuration, dependencies, logging, database setup
+- `services/api/tests/` — Comprehensive test framework with 75%+ coverage target:
+  - `test_runner.py` — CLI test orchestrator with coverage, linting, performance testing
+  - `unit/` — Component-level tests with mocking for external dependencies  
+  - `integration/` — End-to-end API workflow tests
+  - `fixtures/` — OSCAL samples, mock configurations, shared test data
+  - Markers: unit, integration, security, slow, oscal for organized test execution
+- `Taskfile.yml` — Complete dev workflow (up, down, lint, fmt, test, oscal-validate, printables)
+- `docker-compose.yml` — Multi-service orchestration (API, PostgreSQL, MinIO with health checks)
+- `pyproject.toml` — Python dependencies including OSCAL CLI, WeasyPrint, MinIO client
 
-**Existing Files**:
-- `project_plan.md` — Detailed technical specifications and architecture
-- `agent.md` — Cross-platform LLM agent configuration template  
-- ` CLAUDE.md` — This guidance file
+**Core API Endpoints** (25+ implemented):
+- **Validation**: `/validate/file`, `/validate/url`, `/validate/batch` — OSCAL document validation
+- **Conversion**: `/convert/json-to-xml`, `/convert/xml-to-json`, `/convert/batch` — Format conversion
+- **Storage**: `/artifacts/`, `/artifacts/{id}/versions`, `/artifacts/{id}/download` — Artifact management  
+- **Operations**: `/operations/`, `/operations/{id}/status`, `/operations/statistics` — Operation tracking
+- **FedRAMP**: `/fedramp/validate`, `/fedramp/baselines`, `/fedramp/constraints` — Compliance validation
+- **Ingestion**: `/ingest/docx`, `/ingest/{id}/mapping`, `/ingest/{id}/oscal` — DOCX→OSCAL pipeline
+- **Printables**: `/printables/generate`, `/printables/{id}/download` — PDF/HTML generation
+
+**Project Files**:
+- `project_plan.md` — Original technical specifications and architecture
+- `agent.md` — Multi-agent coordination patterns and templates  
+- ` CLAUDE.md` — This implementation guidance and repo map
 
 ## 7) Quality Gates (auto-enforce)
 - **Ruff**: error on `E,F,B,UP,I`; line length `100`.

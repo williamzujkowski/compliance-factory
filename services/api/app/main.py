@@ -31,13 +31,18 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     logger.info("Starting OSCAL Compliance Factory API", version=settings.version)
     
     # Initialize database connection
-    # await init_db()
+    from app.core.database import init_database
+    await init_database()
     
-    # Initialize MinIO/S3 storage
-    # await init_storage()
+    # Initialize MinIO/S3 storage - verify connectivity
+    from app.services.storage_service import StorageService
+    storage_service = StorageService()
+    await storage_service.health_check()
     
     # Verify OSCAL CLI availability
-    # await verify_oscal_cli()
+    from app.services.oscal_service import OSCALService
+    oscal_service = OSCALService()
+    await oscal_service.verify_cli_available()
     
     logger.info("Application startup complete")
     
@@ -45,7 +50,12 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     
     # Shutdown
     logger.info("Shutting down OSCAL Compliance Factory API")
-    # Cleanup resources here if needed
+    
+    # Cleanup database connections
+    from app.core.database import close_database
+    await close_database()
+    
+    logger.info("Application shutdown complete")
 
 
 def create_application() -> FastAPI:
